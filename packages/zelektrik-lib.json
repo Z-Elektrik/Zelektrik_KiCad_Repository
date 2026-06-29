@@ -1,0 +1,42 @@
+{
+  "$schema": "https://go.kicad.org/pcm/schemas/v1",
+
+  "identifier": "sk.zelektrik.lib",
+
+  "name": "ZElektrik Libraries",
+
+  "description": "ZElektrik symbol, footprint and 3D libraries",
+
+  "author": {
+    "name": "ZElektrik"
+  },
+
+  "type": "library",
+
+  "resources": {
+    "icon":
+      "https://z-elektrik.github.io/Zelektrik_KiCad_Repository/resources/zelektrik-logo.png"
+  },
+
+  "versions": [
+    {
+      "version": "1.0.0",
+
+      "status": "stable",
+
+      "download_url":
+        "https://github.com/Z-Elektrik/LIB/archive/refs/heads/main.zip",
+
+      "download_sha256": "",
+
+      "download_size": 0,
+
+      "install_size": 0,
+
+      "kicad_version": {
+        "min": "9.0.0",
+        "max": "10.99.99"
+      }
+    }
+  ]
+}
