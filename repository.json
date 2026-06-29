@@ -1,11 +1,8 @@
 {
   "$schema": "https://go.kicad.org/pcm/schemas/v1",
 
-  "name": "ZElektrik GitHUB Repository",
+  "name": "ZElektrik Repository",
 
-  "packages": [
-    {
-      "url": "https://z-elektrik.github.io/Zelektrik_KiCad_Repository/packages/zelektrik-lib.json"
-    }
-  ]
+  "packages":
+    "https://z-elektrik.github.io/Zelektrik_KiCad_Repository/packages.json"
 }
