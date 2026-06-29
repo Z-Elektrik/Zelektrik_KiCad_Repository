@@ -1,8 +1,8 @@
 {
   "provider_name": "ZElektrik",
   "provider_version": "1.0",
-  "panel_url": "https://<user>.github.io/Zelektrik_KiCad_Repository/",
-  "api_base_url": "https://<user>.github.io/Zelektrik_KiCad_Repository/",
+  "panel_url": "https://z-elektrik.github.io//Zelektrik_KiCad_Repository/",
+  "api_base_url": "https://z-elektrik.github.io//Zelektrik_KiCad_Repository/",
   "supported_asset_types": [
     "symbol"
   ],
