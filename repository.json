@@ -1,0 +1,8 @@
+{
+  "name": "ZElektrik KiCad Libraries",
+  "description": "Official ZElektrik symbol and footprint libraries",
+  "maintainer": "ZElektrik",
+  "packages": [
+    "zelektrik-lib"
+  ]
+}
