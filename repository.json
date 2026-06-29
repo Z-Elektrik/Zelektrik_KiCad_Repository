@@ -12,11 +12,5 @@
         "sha256": "2ec2fa981bffb843211531bb07e4bee7bf9c02aaeaca51ef473c08ad6109a45a",
         "update_timestamp": 1782825000,
         "update_time_utc": "2026-06-29 15:00:00"
-    },
-    "resources": {
-        "url": "https://z-elektrik.github.io/Zelektrik_KiCad_Repository/resources.zip",
-        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "update_timestamp": 1782825000,
-        "update_time_utc": "2026-06-29 15:00:00"
     }
 }
