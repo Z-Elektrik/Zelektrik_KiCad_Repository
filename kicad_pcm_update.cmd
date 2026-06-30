@@ -27,7 +27,7 @@ REM ===== SHA256 packages-v1.json =====
 echo [2] Calculating SHA256 of packages-v1.json...
 
 for /f %%a in ('
-powershell -NoProfile -Command "(Get-FileHash '%PKG_FILE%' -Algorithm SHA256).Hash"
+powershell -NoProfile -Command "(Get-FileHash '%PKG_FILE%' -Algorithm SHA256).Hash.ToLower()"
 ') do set PKG_HASH=%%a
 
 echo     !PKG_HASH!
@@ -49,7 +49,7 @@ if /i "!DOZIP!"=="y" (
     echo [5] Calculating LIB.zip SHA256...
 
     for /f %%a in ('
-    powershell -NoProfile -Command "(Get-FileHash 'LIB.zip' -Algorithm SHA256).Hash"
+    powershell -NoProfile -Command "(Get-FileHash 'LIB.zip' -Algorithm SHA256).Hash.ToLower()"
     ') do set ZIP_HASH=%%a
 
     echo     !ZIP_HASH!
