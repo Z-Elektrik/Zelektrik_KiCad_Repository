@@ -31,16 +31,14 @@
                                        },
                          "versions":  [
                                           {
-                                              "version":  "1.0.0",
+                                              "version":  "0.0.1",
                                               "status":  "stable",
                                               "download_url":  "https://github.com/Z-Elektrik/LIB/archive/refs/heads/main.zip",
                                               "download_sha256":  "d4575686bf626128e32a8551ee3db7ad13f406e4ee34f6e1610c6f926b80f305",
                                               "download_size":  181000000,
                                               "install_size":  250000000,
-                                              "kicad_version":  {
-                                                                    "min":  "9.0.0",
-                                                                    "max":  "10.99"
-                                                                }
+                                              "kicad_version":  "9.0.0",
+                                              "kicad_version_max":  "10.99"
                                           }
                                       ]
                      }
