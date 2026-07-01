@@ -32,7 +32,7 @@
                                        },
                          "versions":  [
                                           {
-                                              "version":  "0.0.1",
+                                              "version":  "0.0.2",
                                               "status":  "stable",
                                               "download_url":  "https://github.com/Z-Elektrik/LIB/releases/download/v0.0.2/ZElektrik.zip",
                                               "download_sha256":  "",
