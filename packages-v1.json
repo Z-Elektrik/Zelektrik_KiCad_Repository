@@ -2,7 +2,7 @@
     "$schema":  "https://go.kicad.org/pcm/schemas/v1#/definitions/Packages",
     "packages":  [
                      {
-                         "identifier":  "sk.zelektrik.lib",
+                         "identifier":  "sk-zelektrik-libraries",
                          "name":  "ZElektrik Libraries",
                          "description":  "SCH, PCB and 3D libraries",
                          "description_full":  "Official ZElektrik KiCad symbol, footprint and 3D model libraries.",
@@ -12,15 +12,22 @@
                                                     },
                                         "name":  "Peto Janis"
                                     },
+                         "maintainer":  {
+                                            "contact":  {
+                                                            "email":  "peto.janis@gmail.com"
+                                                        },
+                                            "name":  "Peto Janis"
+                                        },
                          "license":  "MIT",
                          "type":  "library",
                          "tags":  [
                                       "symbols",
                                       "footprints",
-                                      "3d"
+                                      "models"
                                   ],
                          "resources":  {
-                                           "GitHub":  "https://github.com/Z-Elektrik/LIB"
+                                           "homepage":  "https://zelektrik.sk",
+                                           "repository":  "https://github.com/Z-Elektrik/LIB"
                                        },
                          "versions":  [
                                           {
