@@ -38,7 +38,7 @@ if /i not "!DOZIP!"=="y" goto SKIP_LIB
 echo.
 echo [1] Downloading LIB.zip...
 
-curl -L -o LIB.zip https://github.com/Z-Elektrik/LIB/archive/refs/heads/main.zip
+curl -L -o LIB.zip https://github.com/Z-Elektrik/LIB/releases/download/v0.0.2/ZElektrik.zip
 
 if errorlevel 1 (
     echo ERROR downloading LIB.zip
