@@ -9,8 +9,8 @@
                    },
     "packages":  {
                      "url":  "https://z-elektrik.github.io/Zelektrik_KiCad_Repository/packages-v1.json",
-                     "sha256":  "bb35d8caf3a79b42384ce50798ba8353bf993cc31d6e38ead4bdc9d7799da4a2",
-                     "update_timestamp":  1782911458,
-                     "update_time_utc":  "2026-07-01 13:10:58"
+                     "sha256":  "d21f823dcf35e5b9c9c197937bf4fe2c0e40493a15110df93aec780d1b54619a",
+                     "update_timestamp":  1782913272,
+                     "update_time_utc":  "2026-07-01 13:41:12"
                  }
 }

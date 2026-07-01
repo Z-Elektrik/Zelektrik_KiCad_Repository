@@ -27,7 +27,8 @@
                                   ],
                          "resources":  {
                                            "homepage":  "https://zelektrik.sk",
-                                           "repository":  "https://github.com/Z-Elektrik/LIB"
+                                           "repository":  "https://github.com/Z-Elektrik/LIB",
+                                           "icon":  "https://z-elektrik.github.io/Zelektrik_KiCad_Repository/resources/zelektrik-logo.png"
                                        },
                          "versions":  [
                                           {
