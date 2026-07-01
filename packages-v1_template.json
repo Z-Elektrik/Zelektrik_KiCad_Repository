@@ -27,16 +27,17 @@
                                   ],
                          "resources":  {
                                            "homepage":  "https://zelektrik.sk",
-                                           "repository":  "https://github.com/Z-Elektrik/LIB"
+                                           "repository":  "https://github.com/Z-Elektrik/LIB",
+                                            "icon": "https://z-elektrik.github.io/Zelektrik_KiCad_Repository/resources/zelektrik-logo.png"
                                        },
                          "versions":  [
                                           {
                                               "version":  "0.0.1",
                                               "status":  "stable",
                                               "download_url":  "https://github.com/Z-Elektrik/LIB/archive/refs/heads/main.zip",
-                                              "download_sha256":  "d629c528e0a5f51942a0779e41ebebeabd18ed5ee1d4692109eec0d90e6a232a",
-                                              "download_size":  181571353,
-                                              "install_size":  864214489,
+                                              "download_sha256":  "d4575686bf626128e32a8551ee3db7ad13f406e4ee34f6e1610c6f926b80f305",
+                                              "download_size":  181571348,
+                                              "install_size":  864214481,
                                               "kicad_version":  "9.0.0",
                                               "kicad_version_max":  "10.99"
                                           }
