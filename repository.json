@@ -1,1 +1,16 @@
-{"$schema":"https://go.kicad.org/pcm/schemas/v1#/definitions/Repository","maintainer":{"name":"ZElektrik","contact":{"web":"https://github.com/Z-Elektrik"}},"name":"ZElektrik KiCad Repository","packages":{"url":"https://z-elektrik.github.io/Zelektrik_KiCad_Repository/packages-v1.json","sha256":"de7bd29fa960e4400003be0af9e2c0a8d8f8b07cad6a22e39b24d9e223b65329","update_timestamp":1782814341,"update_time_utc":"2026-06-30 10:12:21"}}
+{
+    "$schema":  "https://go.kicad.org/pcm/schemas/v1#/definitions/Repository",
+    "maintainer":  {
+                       "name":  "ZElektrik",
+                       "contact":  {
+                                       "web":  "https://github.com/Z-Elektrik"
+                                   }
+                   },
+    "name":  "ZElektrik KiCad Repository",
+    "packages":  {
+                     "url":  "https://z-elektrik.github.io/Zelektrik_KiCad_Repository/packages-v1.json",
+                     "sha256":  "34dd74927afc05f3188b8f14d1bf5aee94efacb88c10ceb2c22b2ace61b5c6f4",
+                     "update_timestamp":  1782891658,
+                     "update_time_utc":  "2026-07-01 07:40:58"
+                 }
+}

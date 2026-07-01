@@ -54,7 +54,8 @@ echo     !ZIP_HASH!
 echo.
 echo [3] Updating packages-v1.json...
 
-powershell -NoProfile -Command "$j=Get-Content '%PKG_FILE%' -Raw | ConvertFrom-Json; $j.packages[0].versions[0].download_sha256='!ZIP_HASH!'; $json=$j | ConvertTo-Json -Depth 20 -Compress; [System.IO.File]::WriteAllText('%PKG_FILE%',$json,(New-Object System.Text.UTF8Encoding($false)))"
+rem powershell -NoProfile -Command "$j=Get-Content '%PKG_FILE%' -Raw | ConvertFrom-Json; $j.packages[0].versions[0].download_sha256='!ZIP_HASH!'; $json=$j | ConvertTo-Json -Depth 20 -Compress; [System.IO.File]::WriteAllText('%PKG_FILE%',$json,(New-Object System.Text.UTF8Encoding($false)))"
+powershell -NoProfile -Command "$j=Get-Content '%PKG_FILE%' -Raw | ConvertFrom-Json; $j.packages[0].versions[0].download_sha256='!ZIP_HASH!'; $json=$j | ConvertTo-Json -Depth 20; [System.IO.File]::WriteAllText('%PKG_FILE%',$json,(New-Object System.Text.UTF8Encoding($false)))"
 
 del LIB.zip
 
@@ -91,7 +92,8 @@ REM ====================================================
 echo.
 echo [6] Updating repository.json...
 
-powershell -NoProfile -Command "$j=Get-Content '%REPO_FILE%' -Raw | ConvertFrom-Json; $j.packages.sha256='!PKG_HASH!'; $j.packages.update_timestamp=[DateTimeOffset]::UtcNow.ToUnixTimeSeconds(); $j.packages.update_time_utc=(Get-Date).ToUniversalTime().ToString('yyyy-MM-dd HH:mm:ss'); $json=$j | ConvertTo-Json -Depth 20 -Compress; [System.IO.File]::WriteAllText('%REPO_FILE%',$json,(New-Object System.Text.UTF8Encoding($false)))"
+rem powershell -NoProfile -Command "$j=Get-Content '%REPO_FILE%' -Raw | ConvertFrom-Json; $j.packages.sha256='!PKG_HASH!'; $j.packages.update_timestamp=[DateTimeOffset]::UtcNow.ToUnixTimeSeconds(); $j.packages.update_time_utc=(Get-Date).ToUniversalTime().ToString('yyyy-MM-dd HH:mm:ss'); $json=$j | ConvertTo-Json -Depth 20 -Compress; [System.IO.File]::WriteAllText('%REPO_FILE%',$json,(New-Object System.Text.UTF8Encoding($false)))"
+powershell -NoProfile -Command "$j=Get-Content '%REPO_FILE%' -Raw | ConvertFrom-Json; $j.packages.sha256='!PKG_HASH!'; $j.packages.update_timestamp=[DateTimeOffset]::UtcNow.ToUnixTimeSeconds(); $j.packages.update_time_utc=(Get-Date).ToUniversalTime().ToString('yyyy-MM-dd HH:mm:ss'); $json=$j | ConvertTo-Json -Depth 20; [System.IO.File]::WriteAllText('%REPO_FILE%',$json,(New-Object System.Text.UTF8Encoding($false)))"
 
 del remote.json
 
