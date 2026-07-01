@@ -16,6 +16,9 @@
                                       "footprints",
                                       "3d"
                                   ],
+                         "resources":  {
+                                           "homepage":  "https://github.com/Z-Elektrik/LIB"
+                                       },
                          "versions":  [
                                           {
                                               "version":  "1.0.0",
