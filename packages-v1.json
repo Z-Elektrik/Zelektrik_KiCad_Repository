@@ -7,7 +7,10 @@
                          "description":  "SCH, PCB and 3D libraries",
                          "description_full":  "Official ZElektrik KiCad symbol, footprint and 3D model libraries.",
                          "author":  {
-                                        "name":  "ZElektrik"
+                                        "contact":  {
+                                                        "email":  "peto.janis@gmail.com"
+                                                    },
+                                        "name":  "Peto Janis"
                                     },
                          "license":  "MIT",
                          "type":  "library",
@@ -17,7 +20,7 @@
                                       "3d"
                                   ],
                          "resources":  {
-                                           "homepage":  "https://github.com/Z-Elektrik/LIB"
+                                           "GitHub":  "https://github.com/Z-Elektrik/LIB"
                                        },
                          "versions":  [
                                           {
