@@ -79,7 +79,7 @@ echo [3] Updating packages-v1.json...
 
 powershell -NoProfile -Command "$j=Get-Content '%PKG_FILE%' -Raw | ConvertFrom-Json; $v=$j.packages[0].versions[0]; $v.download_sha256='!ZIP_HASH!'; $v.download_size=!ZIP_SIZE!; $v.install_size=!INSTALL_SIZE!; $json=$j | ConvertTo-Json -Depth 20; [System.IO.File]::WriteAllText('%PKG_FILE%',$json,(New-Object System.Text.UTF8Encoding($false)))"
 REM normalize LF
-powershell -NoProfile -Command "$t=[System.IO.File]::ReadAllText('%PKG_FILE%'); $t=$t -replace \"rn\",\"n\"; [System.IO.File]::WriteAllText('%PKG_FILE%',$t,(New-Object System.Text.UTF8Encoding($false)))"
+powershell -NoProfile -Command "$t=[System.IO.File]::ReadAllText('%PKG_FILE%'); $t=$t -replace \"`r`n\",\"`n\"; [System.IO.File]::WriteAllText('%PKG_FILE%',$t,(New-Object System.Text.UTF8Encoding($false)))"
 
 del LIB.zip
 
@@ -105,11 +105,10 @@ REM ====================================================
 echo.
 echo [5] Updating repository.json...
 
-
 rem powershell -NoProfile -Command "$j=Get-Content '%REPO_FILE%' -Raw | ConvertFrom-Json; $j.packages.sha256='!PKG_HASH!'; $j.packages.update_timestamp=[DateTimeOffset]::UtcNow.ToUnixTimeSeconds(); $j.packages.update_time_utc=(Get-Date).ToUniversalTime().ToString('yyyy-MM-dd HH:mm:ss'); $json=$j | ConvertTo-Json -Depth 20 -Compress; [System.IO.File]::WriteAllText('%REPO_FILE%',$json,(New-Object System.Text.UTF8Encoding($false)))" 
 powershell -NoProfile -Command "$j=Get-Content '%REPO_FILE%' -Raw | ConvertFrom-Json; $j.packages.sha256='!PKG_HASH!'; $j.packages.update_timestamp=[DateTimeOffset]::UtcNow.ToUnixTimeSeconds(); $j.packages.update_time_utc=(Get-Date).ToUniversalTime().ToString('yyyy-MM-dd HH:mm:ss'); $json=$j | ConvertTo-Json -Depth 20; [System.IO.File]::WriteAllText('%REPO_FILE%',$json,(New-Object System.Text.UTF8Encoding($false)))"
 REM normalize LF
-powershell -NoProfile -Command "$t=[System.IO.File]::ReadAllText('%REPO_FILE%'); $t=$t -replace \"rn\",\"n\"; [System.IO.File]::WriteAllText('%REPO_FILE%',$t,(New-Object System.Text.UTF8Encoding($false)))"
+powershell -NoProfile -Command "$t=[System.IO.File]::ReadAllText('%REPO_FILE%'); $t=$t -replace \"`r`n\",\"`n\"; [System.IO.File]::WriteAllText('%REPO_FILE%',$t,(New-Object System.Text.UTF8Encoding($false)))"
 
 echo.
 echo ==========================================
