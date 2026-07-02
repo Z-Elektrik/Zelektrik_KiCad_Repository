@@ -117,3 +117,10 @@ echo ==========================================
 echo.
 
 pause
+
+
+
+rem KONTROLA SHA stiahnutim publikovaneho:
+rem 1. curl -L -o A.json https://z-elektrik.github.io/Zelektrik_KiCad_Repository/repository.json
+rem 2. powershell -NoProfile -Command "(Get-FileHash 'A.json' -Algorithm SHA256).Hash"
+rem 3. porovnaj co vygeneroval voci tomu co je zapisane.
